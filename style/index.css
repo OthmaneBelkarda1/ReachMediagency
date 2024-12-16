@@ -42,7 +42,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ccc;
+    color:  #4a2942;
 }
 
 .services-dropdown {
@@ -292,8 +292,8 @@ strong {
 }
 
 .social-icon img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     transition: opacity 0.3s;
 }
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - ReachMedia</title>
+    <link rel="stylesheet" href="style/service.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="img/RM (1).png" class="logo">
+            <div class="nav-links">
+                <a href="index.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html"><button class="contact-btn">Contactez-nous</button></a>
+        </div>
+    </nav>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img/RM (1).png" alt="Site Web" class="service-icon">
+                    <h3>Site Web</h3>
+                    <p>Création de sites web modernes, responsifs et optimisés pour vos objectifs commerciaux.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/RM (1).png" alt="SEO" class="service-icon">
+                    <h3>SEO</h3>
+                    <p>Optimisation pour les moteurs de recherche pour améliorer votre visibilité en ligne.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/RM (1).png" alt="Publicité en ligne" class="service-icon">
+                    <h3>Publicité en ligne</h3>
+                    <p>Campagnes publicitaires ciblées sur les plateformes digitales pour atteindre votre audience.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/RM (1).png" alt="Gestion de réseaux sociaux" class="service-icon">
+                    <h3>Gestion de réseaux sociaux</h3>
+                    <p>Stratégies de contenu et gestion de communauté pour renforcer votre présence sur les réseaux sociaux.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img/RM (1).png" alt="Design graphique" class="service-icon">
+                    <h3>Design graphique</h3>
+                    <p>Création d'identités visuelles percutantes et de supports marketing attrayants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Reach Media Agency - Votre partenaire pour des solutions digitales innovantes et sur mesure. Transformez votre présence en ligne avec nos services professionnels</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                     <li><a href="#">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@reachmedia.com</p>
+                <p>Téléphone: +212 601-091779</p>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024CReach Media. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to current nav item
+        const currentLocation = location.href;
+        const menuItems = document.querySelectorAll('.nav-links a');
+        menuItems.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
