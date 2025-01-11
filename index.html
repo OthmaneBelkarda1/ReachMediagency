@@ -6,7 +6,6 @@
     <title>Reach Media Agency</title>
     <link rel="icon" href="img/RM (3).png" type="image/png">
     <link rel="stylesheet" href="style/index.css">
-  
 </head>
 <body>
     <nav class="navbar">
@@ -14,18 +13,23 @@
             <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
         </div>
         <div class="nav-links">
-            <a href="index.html">À propos</a>
-           <div class="services-dropdown">
+            <a href="#about">À propos</a>
+            <div class="services-dropdown">
                 <a href="services.html">Services ▾</a>
                 <div class="dropdown-content">
-                    <a href="services.html">Site web</a>
-                    <a href="services.html">SEO</a>
-                    <a href="services.html">Publicité en ligne</a>
-                    <a href="services.html">Gestion de réseaux sociaux</a>
-                    <a href="services.html">Design graphique</a>
+                    <a href="#web">Site web</a>
+                    <a href="#seo">SEO</a>
+                    <a href="#pub">Publicité en ligne</a>
+                    <a href="#social">Gestion de réseaux sociaux</a>
+                    <a href="#design">Design graphique</a>
                 </div>
             </div>
-            <a href="contact.html">Contact</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
@@ -34,43 +38,60 @@
         <h2>Agence Marketing Digital pour les entreprises exigeantes</h2>
         <p>Propulsez votre entreprise avec l'agence marketing digital leader au Maroc.</p>
         <p>Forte d'une expertise éprouvée et de résultats concrets, notre agence marketing digital expert est prête à vous accompagner dans votre conquête du monde digital.</p>
-        <p>Rejoignez notre liste de plusieurs <span class="highlight"> entreprises qui nous ont fait confiance</span> pour leur stratégie digitale.</p>
-        <a href="contact.html"><button class="contact-btn">Contactez-nous</button></a>
+        <p>Rejoignez notre liste de plusieurs <span class="highlight">entreprises qui nous ont fait confiance</span> pour leur stratégie digitale.</p>
+        <a href="#contact" class="contact-btn">Contactez-nous</a>
     </main>
-    <section class="about-section">
+
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-card">
                     <h2 class="about-title">Qui sommes-nous ?</h2>
                     <div class="about-content">
-                        <p>
-                        Reach Media Agency est une<strong> agence de communication digitale innovante basée à Rabat, au Maroc.</strong></p>
-                        
-                        <p>Les missions d'une <strong>agence de communication </strong> normale sont de concevoir, planifier et mettre en œuvre des stratégies de communication efficaces.</p>
-                        
+                        <p>Reach Media Agency est une <strong>agence de communication digitale innovante basée à Rabat, au Maroc.</strong></p>
+                        <p>Les missions d'une <strong>agence de communication</strong> normale sont de concevoir, planifier et mettre en œuvre des stratégies de communication efficaces.</p>
                         <p>Notre mission à nous, par contre, est de créer des solutions personnalisées et innovantes pour nos clients.</p>
-                        
                         <p>Aujourd'hui, plusieurs entreprises font confiance à notre agence de communication pour utiliser nos services et notre assistance. Elles transforment ainsi la manière dont elles attirent les clients grâce à une stratégie de communication puissante</p>
-                        
                         <img src="img/RM (1).png" alt="RHILLANE" class="about-logo">
                     </div>
                 </div>
-                
                 <div class="vision-mission">
                     <div class="vision-section">
                         <h2 class="section-title">Vision</h2>
                         <p>Mettre la puissance de la technologie au service des entreprises et les aider à accéder à des opportunités plus riches grâce au <strong>Marketing Digital</strong>.</p>
                     </div>
-                    
                     <div class="mission-section">
                         <h2 class="section-title">Mission</h2>
-                        <p>Notre <strong>agence de communication </strong> se concentre sur les éléments clés de l'activité des entreprises et fournissons les bonnes solutions avec la bonne qualité et en temps voulu. Malgré les imprévus mondiaux qui peuvent surgir, <strong>nous nous montrons à la hauteur</strong> et ne nous contentons jamais de rien.</p>
+                        <p>Notre <strong>agence de communication</strong> se concentre sur les éléments clés de l'activité des entreprises et fournissons les bonnes solutions avec la bonne qualité et en temps voulu. Malgré les imprévus mondiaux qui peuvent surgir, <strong>nous nous montrons à la hauteur</strong> et ne nous contentons jamais de rien.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="site-footer">
+    <div class="services-dropdown">
+        <a href="services.html">Services ▾</a>
+        <div class="dropdown-content">
+            <a href="services.html#web">Site web</a>
+            <a href="services.html#seo">SEO</a>
+            <a href="services.html#pub">Publicité en ligne</a>
+            <a href="services.html#social">Gestion de réseaux sociaux</a>
+            <a href="services.html#design">Design graphique</a>
+        </div>
+    </div>
+    <section class="clients-section">
+        <div class="container">
+            <h2>Nos Clients</h2>
+            <div class="client-logos">
+                <!-- Remplacez les "Logo Client X" par vos vrais logos -->
+                <img src="img/client/isliLogo.png" alt="Logo Client 1" class="client-logo">
+                <img src="img/client/capucineLog.png" alt="Logo Client 2" class="client-logo">
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
         <div class="footer-content">
             <div class="footer-section">
                 <img src="img/RM (1).png" alt="RHILLANE" class="footer-logo">
@@ -79,11 +100,11 @@
             <div class="footer-section">
                 <h3>Nos Services</h3>
                 <ul>
-                    <li><a href="#web">Site web</a></li>
-                    <li><a href="#seo">SEO</a></li>
-                    <li><a href="#pub">Publicité en ligne</a></li>
-                    <li><a href="#social">Gestion de réseaux sociaux</a></li>
-                    <li><a href="#design">Design graphique</a></li>
+                    <li><a href="services.html">Site web</a></li>
+                    <li><a href="services.html">SEO</a></li>
+                    <li><a href="services.html">Publicité en ligne</a></li>
+                    <li><a href="services.html">Gestion de réseaux sociaux</a></li>
+                    <li><a href="services.html">Design graphique</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -104,31 +125,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 <a  class="agencyName" href="index.html">Reach Media</a>. Tous droits réservés.</p>
-
+            <p>&copy; 2024 <a class="agencyName" href="#about">Reach Media</a>. Tous droits réservés.</p>
         </div>
     </footer>
-    
-  
-  
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
 
-        // Handle language switching
-        document.querySelectorAll('.language-switcher img').forEach(img => {
-            img.addEventListener('click', function() {
-                // Add your language switching logic here
-                console.log('Switching to', this.alt);
-            });
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

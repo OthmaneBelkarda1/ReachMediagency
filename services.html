@@ -3,101 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services - ReachMedia</title>
-    <link rel="stylesheet" href="style/service.css">
+    <title>Nos Services - Reach Media Agency</title>
     <link rel="icon" href="img/RM (3).png" type="image/png">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/service.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <img src="img/RM (1).png" class="logo">
-            <div class="nav-links">
-                <a href="index.html">À propos</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
+        <div class="logo">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">À propos</a>
+            <div class="services-dropdown">
+                <a href="services.html">Services ▾</a>
+                <div class="dropdown-content">
+                    <a href="#web">Site web</a>
+                    <a href="#seo">SEO</a>
+                    <a href="#pub">Publicité en ligne</a>
+                    <a href="#social">Gestion de réseaux sociaux</a>
+                    <a href="#design">Design graphique</a>
+                </div>
             </div>
-            <a href="contact.html"><button class="contact-btn">Contactez-nous</button></a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
-    <section class="services-section">
-        <div class="container">
-            <h2 class="section-title">Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="img/RM (1).png" alt="Site Web" class="service-icon">
-                    <h3>Site Web</h3>
-                    <p>Création de sites web modernes, responsifs et optimisés pour vos objectifs commerciaux.</p>
-                </div>
-                <div class="service-card">
-                    <img src="img/RM (1).png" alt="SEO" class="service-icon">
-                    <h3>SEO</h3>
-                    <p>Optimisation pour les moteurs de recherche pour améliorer votre visibilité en ligne.</p>
-                </div>
-                <div class="service-card">
-                    <img src="img/RM (1).png" alt="Publicité en ligne" class="service-icon">
-                    <h3>Publicité en ligne</h3>
-                    <p>Campagnes publicitaires ciblées sur les plateformes digitales pour atteindre votre audience.</p>
-                </div>
-                <div class="service-card">
-                    <img src="img/RM (1).png" alt="Gestion de réseaux sociaux" class="service-icon">
-                    <h3>Gestion de réseaux sociaux</h3>
-                    <p>Stratégies de contenu et gestion de communauté pour renforcer votre présence sur les réseaux sociaux.</p>
-                </div>
-                <div class="service-card">
-                    <img src="img/RM (1).png" alt="Design graphique" class="service-icon">
-                    <h3>Design graphique</h3>
-                    <p>Création d'identités visuelles percutantes et de supports marketing attrayants.</p>
-                </div>
-            </div>
+    <main class="services-hero">
+        <h1>Nos Services</h1>
+        <p>Découvrez notre gamme complète de services de marketing digital</p>
+    </main>
+
+    <section class="services-grid">
+        <div class="service-card" id="web">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+            <h2 class="service-title">Site web</h2>
+            <p class="service-description">Création de sites web modernes, responsives et optimisés pour convertir vos visiteurs en clients.</p>
+        </div>
+        <div class="service-card" id="seo">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+            <h2 class="service-title">SEO</h2>
+            <p class="service-description">Optimisation de votre présence en ligne pour améliorer votre visibilité dans les moteurs de recherche.</p>
+        </div>
+        <div class="service-card" id="pub">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+            <h2 class="service-title">Publicité en ligne</h2>
+            <p class="service-description">Campagnes publicitaires ciblées sur les réseaux sociaux et les moteurs de recherche pour atteindre votre audience idéale.</p>
+        </div>
+        <div class="service-card" id="social">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+            <h2 class="service-title">Gestion de réseaux sociaux</h2>
+            <p class="service-description">Gestion professionnelle de vos profils sociaux pour engager votre communauté et développer votre marque.</p>
+        </div>
+        <div class="service-card" id="design">
+            <img src="img/RM (1).png" alt="RHILLANE" class="logo-image">
+            <h2 class="service-title">Design graphique</h2>
+            <p class="service-description">Création de visuels attrayants et cohérents pour renforcer l'identité visuelle de votre marque.</p>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>À propos</h3>
+                <img src="img/RM (1).png" alt="RHILLANE" class="footer-logo">
                 <p>Reach Media Agency - Votre partenaire pour des solutions digitales innovantes et sur mesure. Transformez votre présence en ligne avec nos services professionnels</p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3>Nos Services</h3>
                 <ul>
-                     <li><a href="#">À propos</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#web">Site web</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#pub">Publicité en ligne</a></li>
+                    <li><a href="#social">Gestion de réseaux sociaux</a></li>
+                    <li><a href="#design">Design graphique</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
                 <p>Email: contact@reachmedia.com</p>
                 <p>Téléphone: +212 601-091779</p>
-                
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/reachmediaagency/" class="social-icon">
+                        <img src="img/LinkedIn-Icon-Black-Logo.wine.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/reachmedia_agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">
+                        <img src="img/Instagram-Glyph-Black-Logo.wine.svg" alt="Instagram">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024CReach Media. Tous droits réservés.</p>
+            <p>&copy; 2024 <a class="agencyName" href="index.html">Reach Media</a>. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add active class to current nav item
-        const currentLocation = location.href;
-        const menuItems = document.querySelectorAll('.nav-links a');
-        menuItems.forEach(item => {
-            if (item.href === currentLocation) {
-                item.classList.add('active');
-            }
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
