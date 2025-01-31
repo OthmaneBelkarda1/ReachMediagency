@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #350347;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-container {
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: #ffffff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  transition: bottom 0.3s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.portfolio-item:hover .overlay {
+  bottom: 0;
+}
+
+.overlay h3 {
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .filters {
+      flex-direction: column;
+  }
+  
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.portfolio-item1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+
+.portfolio-item1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  filter: grayscale(100%);
+}
+.portfolio-item1:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.portfolio-item1:hover .overlay {
+  bottom: 0;
+}

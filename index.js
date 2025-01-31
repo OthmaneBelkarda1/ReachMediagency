@@ -26,3 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Filtrage Portfolio
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Retire la classe active
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+  
+        // Filtre les éléments
+        const filterValue = button.dataset.filter;
+        
+        portfolioItems.forEach(item => {
+          const category = item.dataset.category;
+          if (filterValue === 'all' || category === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
